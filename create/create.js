@@ -121,13 +121,13 @@ async function onEncrypt() {
 
   const encrypted = await generateFragment(url, password, hint, useRandomSalt,
       useRandomIv);
-  const output = `https://jstrieb.github.io/link-lock/#${encrypted}`;
+  const output = `https://goldhatgamer.github.io/pass-link/#${encrypted}`;
 
   document.querySelector("#output").value = output;
   highlight("output");
 
   // Adjust "Hidden Bookmark" link
-  document.querySelector("#bookmark").href = `https://jstrieb.github.io/link-lock/hidden/#${encrypted}`;
+  document.querySelector("#bookmark").href = `https://goldhatgamer.github.io/pass-link/hidden/#${encrypted}`;
 
   // Adjust "Open in New Tab" link
   document.querySelector("#open").href = output;
